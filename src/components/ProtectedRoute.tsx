@@ -1,13 +1,13 @@
-import type { PropsWithChildren } from "react";
-import { Navigate } from "react-router";
-import { useAuth } from "@/hooks/useAuth";
+import { useAuth } from '@/hooks/useAuth';
+import type { PropsWithChildren } from 'react';
+import { Navigate } from 'react-router';
 
 export function ProtectedRoute({ children }: PropsWithChildren) {
-  const { session } = useAuth();
+	const { session } = useAuth();
 
-  if (!session) {
-    return <Navigate to="/sign-in" />;
-  }
+	if (!session) {
+		return <Navigate to="/sign-in" />;
+	}
 
-  return children;
+	return children;
 }
