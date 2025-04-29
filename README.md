@@ -71,8 +71,8 @@ This is a modern web application starter using:
 
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/alsvader/supatask.git
+cd supatask
 ````
 
 ### 2. Install dependencies
@@ -85,7 +85,7 @@ pnpm install
 
 ```bash
 VITE_SUPABASE_URL=your-supabase-url
-VITE_SUPABASE_ANON_KEY=your-anon-key
+VITE_SUPABASE_KEY=your-supabase-key
 ````
 
 ### 4. Start the development server
