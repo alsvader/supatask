@@ -41,7 +41,7 @@ function SignUp() {
 
 	return (
 		<AuthLayout>
-			<AuthForm title="Sign Up" onSubmit={handleFormSubmit}>
+			<AuthForm title="Sign Up" btnLabel="Sign Up" onSubmit={handleFormSubmit}>
 				<p className="text-center mt-5">
 					Already have an account?{' '}
 					<Link
@@ -51,14 +51,6 @@ function SignUp() {
 						Log In
 					</Link>
 				</p>
-				{/* {error && (
-          <div
-            role="alert"
-            className="alert alert-error alert-soft font-bold  mt-5"
-          >
-            <span>{error}</span>
-          </div>
-        )} */}
 			</AuthForm>
 		</AuthLayout>
 	);
