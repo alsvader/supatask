@@ -40,8 +40,6 @@ function Dashboard() {
 	}, []);
 
 	const handleRealTimeChange = (payload: RealtimePostgresChangesPayload<Task>) => {
-		console.log('handleRealTimeChange', payload);
-
 		switch (payload.eventType) {
 			case 'INSERT': {
 				const newTask = payload.new as Task;

@@ -21,5 +21,5 @@ export interface UpdateTaskParams {
 
 export interface TaskUpdatedParams {
 	task?: string;
-	is_completed?: number;
+	is_completed?: boolean;
 }

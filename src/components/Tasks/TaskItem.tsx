@@ -15,7 +15,7 @@ export function TaskItem({ task, onDelete, onUpdate }: TaskItemProps) {
 	const handleChangeIsCompleted = () => {
 		onUpdate(
 			{
-				is_completed: task.is_completed === 1 ? 0 : 1,
+				is_completed: !task.is_completed,
 			},
 			task.id,
 		);
